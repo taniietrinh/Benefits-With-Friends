@@ -11,6 +11,7 @@ Prepared by Jose Heernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, Jerahm
 ------------------------
 
 1.3 Intended Audience and Reading Suggestions
+---------------------------------------------
 
 2.1 Product Perspective
 -----------------------
