@@ -7,12 +7,11 @@
 
 #### 1.1 	Purpose
 
-
-The purpose of Benefits With Friends is to connect the working class and share their employee benefits with fellow working class employees. It will be implemented as a website. The revision and release number of Benefits With Friends will be version 1.0 since it will be a new product.
+The purpose of this document is to give a detailed description of the requirements for Benefits With Friends. It will describe the purpose and development of the system. This document will also explain the constraints and interface. Since Benefits With Friends will be a new product, this document will be used as a reference to developing the first version of the system.
 
 #### 1.2 	Document Conventions
 
-All typographic conventions in the document are the default conventions if this document. Every requirement is expected to be high priority.
+All typographic conventions in the document are the default conventions of this document. Every requirement is expected to be high or medium priority.
 
 #### 1.3 	Intended Audience and Reading Suggestions
 
@@ -20,7 +19,7 @@ The intended audience for this document is the TA for Nash Mahmoud’s CSC4330 c
 
 #### 1.4 	Product Scope
 
-The software is a web-based service which allows users to use each other’s employee benefits. The corporate goal of this service is to allow employees of low-earning jobs to maximize the benefits offered by their employers.
+Benefits With Friends is a web-based service which allows users to use each other’s employee benefits. The corporate goal of this service is to allow employees of low-earning jobs to maximize the benefits offered by their employers. The product will be free and accessed by any web browser. Also, the product needs Internet in order to function and display results.
 
 #### 1.5 	References
 
@@ -30,7 +29,7 @@ IEEE Std 830-1998 Recommended Practice for Software Requirements Specifications.
 
 #### 2.1 	Product Perspective
  
-Benefits With Friends (BWF) is a service intended to allow employees to use each other’s employee benefits. BWF is an original self-contained product.
+Benefits With Friends (BWF) is a service intended to allow employees to use each other’s employee benefits. BWF is an original self-contained product. The product will be presented as a website.
 
 #### 2.2 	Product Functions
 
@@ -107,7 +106,7 @@ Users will be able to enter their login information to access their unique user 
  
 ###### 4.2.2 	Stimulus/Response Sequences
  
-The stimulus will be a user accessing the app on a new device. The system will respond by logging the user into their account if the user inputs their login information
+The stimulus will be a user accessing the website on any web browser. The system will respond by logging the user into their account if the user inputs their login information.
 
 ###### 4.2.3 	Functional Requirements
 
@@ -200,6 +199,6 @@ Appendix B: Analysis Models
 
 Appendix C: To Be Determined List
 
-
+1. The method for users to contact each other
 
 
