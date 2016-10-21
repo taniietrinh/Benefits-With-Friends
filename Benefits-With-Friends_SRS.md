@@ -8,7 +8,7 @@
 #### 1.1 	Purpose
 
 
-The purpose of Benefits With Friends is to connect the working class and share their employee benefits with fellow working class employees. It will be implemented as a website. The revision and release number of Benefits With Friends will be version 1.0 since it will be a new product. 
+The purpose of Benefits With Friends is to connect the working class and share their employee benefits with fellow working class employees. It will be implemented as a website. The revision and release number of Benefits With Friends will be version 1.0 since it will be a new product.
 
 #### 1.2 	Document Conventions
 
@@ -16,7 +16,7 @@ All typographic conventions in the document are the default conventions if this 
 
 #### 1.3 	Intended Audience and Reading Suggestions
 
-The intended audience for this document is TAs for Nash Mahmoud’s CSC4330 class. The SRS document contains a description of the systems which make up the Benefits With Friends service. 
+The intended audience for this document is the TA for Nash Mahmoud’s CSC4330 class and Dr. Nash. The SRS document contains a description of the systems which make up the Benefits With Friends service. 
 
 #### 1.4 	Product Scope
 
