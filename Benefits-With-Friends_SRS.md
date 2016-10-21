@@ -19,8 +19,7 @@ The intended audience for this document is the TA for Nash Mahmoud’s CSC4330 c
 
 #### 1.4 	Product Scope
 
-Benefits With Friends is a web-based service which allows users to use each other’s employee benefits. The corporate goal of this service is to allow employees of low-earning jobs to maximize the benefits offered by their employers. The product will be free and accessed by any web browser. Also, the product needs Internet in order to function and display results.
-
+Benefits With Friends is a web-based service which allows users to use each other’s employee benefits. The corporate goal of this service is to allow employees of low-earning jobs to maximize the benefits offered by their employers. The product will be free and accessible through any web browser connected to the internet.
 #### 1.5 	References
 
 IEEE Std 830-1998 Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998.
@@ -51,7 +50,7 @@ The general user class that will use this product is users employed at a company
 
 #### 2.4 	Operating Environment
 
-The software will run on a Linux server capable of running Node.js, NPM, and MySQL packages.
+The software will run on a Linux server capable of running the Node.js, NPM, and MySQL packages.
 
 #### 2.5 	Design and Implementation Constraints
  
@@ -87,7 +86,7 @@ The HTTP communication standard HTTP will be implemented.
 
 ###### 4.1.1 	Description and Priority
  
-New users will create a unique account to which their personal information will be stored. This will be a high priority feature since it involves a security issue.
+New users will create a unique account to which their personal information will be stored. This will be a high priority feature.
  
 ###### 4.1.2 	Stimulus/Response Sequences
  
@@ -178,7 +177,7 @@ The main safety requirement will be the app’s legality and vulnerability to le
  
 #### 5.3 	Security Requirements
  
-User information will not be visible to other users. The login and password feature will keep user information encrypted.
+User information will not be visible to other users. Passwords will be encrypted.
 
 #### 5.4 	Software Quality Attributes
  
