@@ -3,26 +3,26 @@
 # Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, Jerahmeel Wilson
 
 
-1. 	Introduction
+### 1. 	Introduction
 
-* 1.1 	Purpose
+#### 1.1 	Purpose
 
 
 The purpose of Benefits With Friends is to connect the working class and share their employee benefits with fellow working class employees. It will be implemented as a website. The revision and release number of Benefits With Friends will be version 1.0 since it will be a new product. 
 
-*  1.2 	Document Conventions
+#### 1.2 	Document Conventions
 
 All typographic conventions in the document are the default conventions if this document. Every requirement is expected to be high priority.
 
-*  1.3 	Intended Audience and Reading Suggestions
+#### 1.3 	Intended Audience and Reading Suggestions
 
 The intended audience for this document is TAs for Nash Mahmoud’s CSC4330 class. The SRS document contains a description of the systems which make up the Benefits With Friends service. 
 
-*  1.4 	Product Scope
+#### 1.4 	Product Scope
 
 The software is a web-based service which allows users to use each other’s employee benefits. The corporate goal of this service is to allow employees of low-earning jobs to maximize the benefits offered by their employers.
 
-*  1.5 	References
+#### 1.5 	References
 
 IEEE Std 830-1998 Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998.
 
@@ -35,10 +35,15 @@ Benefits With Friends (BWF) is a service intended to allow employees to use each
 #### 2.2 	Product Functions
 
 ·        Users will be able to log into a unique account containing their personal information
+
 ·        Users will be able to post a description of their employee benefit (EB) onto a public board
+
 ·        Users will be able to see a list of EBs posted by other users
+
 ·        Users will be able to select existing EBs that they find desirable
+
 ·        If two users find each other’s EBs desirable, these two users will be prompted to contact each other to negotiate the use of their EBs
+
 ·        Users will be able to see a list of previous matches
 
 #### 2.3 	User Classes and Characteristics
@@ -81,78 +86,86 @@ The HTTP communication standard HTTP will be implemented.
 ### 4. 	System Features
 #### 4.1     Account Creation
 
-4.1.1 	Description and Priority
+* 4.1.1 	Description and Priority
  
 New users will create a unique account to which their personal information will be stored. This will be a high priority feature since it involves a security issue.
  
-4.1.2 	Stimulus/Response Sequences
+* 4.1.2 	Stimulus/Response Sequences
  
 The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information.
 
-4.1.3 	Functional Requirements
+* 4.1.3 	Functional Requirements
  
-REQ-1:	The system will validate the user input and create and save an account to the database
+REQ-1:	The system will validate the user input and create and save an account to the database.
+
 REQ-2:	The user will be logged in and redirected to a help page.
 
 #### 4.2 	Logging Into An Account
-4.2.1 	Description and Priority
+* 4.2.1 	Description and Priority
  
 Users will be able to enter their login information to access their unique user accounts. Logging into an account will be a high priority since the user cannot use the website if no account was made.
  
-4.2.2 	Stimulus/Response Sequences
+* 4.2.2 	Stimulus/Response Sequences
  
 The stimulus will be a user accessing the app on a new device. The system will respond by logging the user into their account if the user inputs their login information
 
-4.2.3 	Functional Requirements
+* 4.2.3 	Functional Requirements
 
 REQ-1:	The system will validate the user input.
+
 REQ-2:	The user will be logged in and redirected to their homepage.
 
 #### 4.3     Posting An Employee Benefit
-4.3.1 	Description and Priority
+* 4.3.1 	Description and Priority
 
 Users will be able to post a description of their EB to a public board. This is a medium priority feature since the user can choose to not post an EB.
  
-4.3.2 	Stimulus/Response Sequences
+* 4.3.2 	Stimulus/Response Sequences
  
 The stimulus will be a user choosing to post a description of their EB. The response will be the creation of a text field for the user to write a description of their EB with an option to submit.
 
-4.3.3 	Functional Requirements
+* 4.3.3 	Functional Requirements
  
-REQ-1:	The system will create a text field for the description of the EB to be written
+REQ-1:	The system will create a text field for the description of the EB to be written.
+
 REQ-2:	The user will be allowed to post the description when finished, or cancel the process before submission.
+
 REQ-3:	The system will post the description of the user’s EB for other users to see.
 
 #### 4.4     Selecting A Desired Benefit
-4.4.1 	Description and Priority
+* 4.4.1 	Description and Priority
 
 Users will be able to select EBs which they find desirable. This feature is medium priority because the user can choose to not select any EBs.
  
-4.4.2 	Stimulus/Response Sequences
+* 4.4.2 	Stimulus/Response Sequences
  
 The stimulus will be a user selecting a desirable EB from a public board. The system will respond by keeping track of the EBs selected by the user. The EBs will be saved into a list for the user to track what they desire.
 
-4.4.3 	Functional Requirements
+* 4.4.3 	Functional Requirements
  
 REQ-1:	The system will allow the user to select one or more desirable EBs.
+
 REQ-2:	The EB will be marked in some way to distinguish selected EBs from the public list.
+
 REQ-3:	The system will keep track of the user’s selected EBs.
+
 REQ-4:	Selected EBs from the user will be saved into a list for easy access.
 
- 
 #### 4.5     Interacting With A Matched User
-4.5.1 	Description and Priority
+* 4.5.1 	Description and Priority
  
 Users who select each other’s EBs will be prompted to contact each other to negotiate the use of the EBs in real life.
  
-4.5.2 	Stimulus/Response Sequences
+* 4.5.2 	Stimulus/Response Sequences
  
 The stimulus will be two users who have selected each other’s EBs. The system will respond by prompting the two users to negotiate, either through existing channels such as email, or through an integrated chat system.
 
-4.5.3 	Functional Requirements
+* 4.5.3 	Functional Requirements
  
 REQ-1:	The system will detect when two users like each other’s EBs.
+
 REQ-2:	The users will receive a notification informing them of a match.
+
 REQ-3:	The users will be prompted to contact each other.
  
 ### 5.     Other Nonfunctional Requirements
@@ -180,6 +193,7 @@ Before Account Creation is completed, users will be presented with a Terms and C
 Appendix A: Glossary
 
 BWF – Benefits With Friends
+
 EB – Employee Benefits
 
 Appendix B: Analysis Models
