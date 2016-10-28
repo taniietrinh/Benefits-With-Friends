@@ -24,4 +24,6 @@ On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. 
 
 On 10/18/16, our team met up to discuss our SRS documentations. Everyone was present and the meeting lasted for <time> hours. During our meeting, we had one team member type while the rest discuss the specification of our project. During this time we also worked on our process model.
 
-On 10/20/16, the team had a meeting to discuss more about the SRS document.
+On 10/20/16, the team had a meeting to discuss more about the SRS document. The objective of the meeting was to revise and add more to the document.
+
+On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to talk about the Software Design Document. The objective was to simply talk about the design and write whatever we could during the meeting.
