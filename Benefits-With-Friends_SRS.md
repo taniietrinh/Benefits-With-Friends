@@ -62,7 +62,9 @@ Upon initial use, users will be given instructions on proper use of the applicat
 
 #### 2.7 	Assumptions and Dependencies
  
-The application will be dependent on the domain and hosting for the website.
+One assumption about the application is that it will usually be used on a web browser. If the user opens the application on a mobile device, there may be scenarios where the device will not have enough hardware resources to run the application as intended.
+
+Another assumption is that the domain and the hosting server for the website will always be running.
 
 ### 3. 	External Interface Requirements
 #### 3.1 	User Interfaces
