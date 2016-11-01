@@ -92,7 +92,7 @@ New users will create a unique account to which their personal information will 
  
 ###### 4.1.2 	Stimulus/Response Sequences
  
-The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information.
+The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information. New users must provide valid input or else an error message will alert the new user.
 
 ###### 4.1.3 	Functional Requirements
  
@@ -103,32 +103,38 @@ REQ-2:	The user will be logged in and redirected to a help page.
 #### 4.2 	Logging Into An Account
 ###### 4.2.1 	Description and Priority
  
-Users will be able to enter their login information to access their unique user accounts. Logging into an account will be a high priority since the user cannot use the website if no account was made.
+Users will be able to enter their login information to access their unique user accounts. Logging into an account will be a high priority since the user cannot use the website if no account was made. 
  
 ###### 4.2.2 	Stimulus/Response Sequences
  
-The stimulus will be a user accessing the website on any web browser. The system will respond by logging the user into their account if the user inputs their login information.
+The stimulus will be a user accessing the website on any web browser. The system will respond by logging the user into their account if the user inputs their login information. In the case that the user cannot remember their login information, the system will ask the user if he/she wishes to create another account or answer his/her security question to log into their account. If the user chooses the security question, answer it correctly, and logs into his/her account, the system will ask the user to change their password.
 
 ###### 4.2.3 	Functional Requirements
 
 REQ-1:	The system will validate the user input.
 
-REQ-2:	The user will be logged in and redirected to their homepage.
+REQ-2: An error message will alert the user if the input was invalid. Otherwise, the user will be logged in and redirected to their homepage.
+
+REQ-3:	If the error continues to occur, the user has the option to create another account or answer his/her security question to log back into his/her account.
+
+REQ-4: If the user chooses to answer his/her security question, the system will show the question and the user must answer it as the way he/she answered it the same way as when he/she created the account.
+
+REQ-5: If the answer is correct, the system will log the user into his/her account and ask the user to change their password. If not, an error message will alert the user.
 
 #### 4.3     Posting An Employee Benefit
 ###### 4.3.1 	Description and Priority
 
-Users will be able to post a description of their EB to a public board. This is a medium priority feature since the user can choose to not post an EB.
+Users will be able to post a description of their EB to a public board. The public board is a list which all of BWF's users can see other users' EBs. This is a medium priority feature since the user can choose to not post an EB.
  
 ###### 4.3.2 	Stimulus/Response Sequences
  
-The stimulus will be a user choosing to post a description of their EB. The response will be the creation of a text field for the user to write a description of their EB with an option to submit.
+The stimulus will be a user choosing to post a description of their EB. The response will be the creation of a text field for the user to write a description of their EB with an option to submit. An error message will alert the user if invalid input was detected.
 
 ###### 4.3.3 	Functional Requirements
  
 REQ-1:	The system will create a text field for the description of the EB to be written.
 
-REQ-2:	The user will be allowed to post the description when finished, or cancel the process before submission.
+REQ-2:	The user will be allowed to post the description when finished, or cancel the process before submission. An error message will occur if the user input invalid information.
 
 REQ-3:	The system will post the description of the user’s EB for other users to see.
 
@@ -139,7 +145,7 @@ Users will be able to select EBs which they find desirable. This feature is medi
  
 ###### 4.4.2 	Stimulus/Response Sequences
  
-The stimulus will be a user selecting a desirable EB from a public board. The system will respond by keeping track of the EBs selected by the user. The EBs will be saved into a list for the user to track what they desire.
+The stimulus will be a user selecting a desirable EB from the public board. The system will respond by keeping track of the EBs selected by the user. The EBs will be saved into a list for the user to track what they desire.
 
 ###### 4.4.3 	Functional Requirements
  
@@ -190,7 +196,7 @@ REQ-4:	If yes, EB is deleted. If no, EB stays.
 #### 4.7     Updating an EB
 ###### 4.7.1 	Description and Priority
  
-The user will be update his/her EB after posting it. The user will be able to update whatever information he/she believes is necessary. Deleting an EB is also a part of updating an EB. An error message will alert the user if the user tries to add invalid input or if the user did not post an EB in the first place. Otherwise, the system will ask the user to confirm the update.
+The user will be update his/her EB after posting it. The user will be able to update whatever information he/she believes is necessary. Deleting an EB is also a part of updating an EB. An error message will alert the user if the user tries to add invalid input or if the user did not post an EB in the first place. Otherwise, the system will ask the user to confirm the update. This will be a medium priority because it's an optional choice for he user if he/she wants to update an EB.
  
 ###### 4.7.2 	Stimulus/Response Sequences
 
