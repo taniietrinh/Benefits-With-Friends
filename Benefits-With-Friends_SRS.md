@@ -2,7 +2,7 @@
 # Version 1.0
 # Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, Jerahmeel Wilson
 
-
+****
 ### 1. 	Introduction
 
 #### 1.1 	Purpose
@@ -23,7 +23,7 @@ Benefits With Friends is a web-based service which allows users to use each othe
 #### 1.5 	References
 
 IEEE Std 830-1998 Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998.
-
+****
 ### 2. 	Overall Description
 
 #### 2.1 	Product Perspective
@@ -65,7 +65,7 @@ Upon initial use, users will be given instructions on proper use of the applicat
 One assumption about the application is that it will usually be used on a web browser. If the user opens the application on a mobile device, there may be scenarios where the device will not have enough hardware resources to run the application as intended.
 
 Another assumption is that the domain and the hosting server for the website will always be running.
-
+****
 ### 3. 	External Interface Requirements
 #### 3.1 	User Interfaces
  
@@ -82,7 +82,7 @@ The application will use a Maria DB database on the same server in order to stor
 #### 3.4 	Communications Interfaces
  
 The HTTP communication standard HTTP will be implemented.
-
+****
 ### 4. 	System Features
 #### 4.1     Account Creation
 
@@ -132,7 +132,7 @@ REQ-2:	The user will be allowed to post the description when finished, or cancel
 
 REQ-3:	The system will post the description of the user’s EB for other users to see.
 
-#### 4.4     Selecting A Desired Benefit
+#### 4.4     Selecting A Desired EB
 ###### 4.4.1 	Description and Priority
 
 Users will be able to select EBs which they find desirable. This feature is medium priority because the user can choose to not select any EBs.
@@ -167,7 +167,48 @@ REQ-1:	The system will detect when two users like each other’s EBs.
 REQ-2:	The users will receive a notification informing them of a match.
 
 REQ-3:	The users will be prompted to contact each other.
+
+#### 4.6     Deleting an EB
+###### 4.6.1 	Description and Priority
  
+For whatever reason the user has, the user has the option of deleting their EB whenever he/she wants to. This option is only available if the user has added/posted an EB. If there are no EB posted by the user, an error message will alert the user that he/she cannot delete a nonexisting EB. This will be a medium priority feature because it's an optional choice for the user if he/she wants to delete an EB.
+ 
+###### 4.6.2 	Stimulus/Response Sequences
+
+After the user posts an EB, there will be an option if the user wants to delete the EB. The user can delete the EB for whatever reason he/she has. If the user decides to delete an EB, the system will ask the user to confirm if he/she truly wishes to delete the EB. If the user chooses yes, the EB will be deleted. If not, the EB will not be deleted.
+
+###### 4.6.3 	Functional Requirements
+ 
+REQ-1:	The user chooses to delete his/her EB.
+
+REQ-2: If no EB was posted in the first place, an error message will alert the user.
+
+REQ-3:	The user must confirm whether he/she wants to delete the EB.
+
+REQ-4:	If yes, EB is deleted. If no, EB stays.
+
+#### 4.7     Updating an EB
+###### 4.7.1 	Description and Priority
+ 
+The user will be update his/her EB after posting it. The user will be able to update whatever information he/she believes is necessary. Deleting an EB is also a part of updating an EB. An error message will alert the user if the user tries to add invalid input or if the user did not post an EB in the first place. Otherwise, the system will ask the user to confirm the update.
+ 
+###### 4.7.2 	Stimulus/Response Sequences
+
+After the user posts an EB, there will be an option for the user to update an EB. If the user chooses to update an EB, the system will show the EB as it would when creating an EB. The user will change whatever information on the EB and the information must be valid input or an error message will alert the user. Once the user chooses to update his/her EB, the system will ask the user to confirm their change. If the user chooses yes, the EB will be updated. If not, the update will be cancelled.
+
+###### 4.7.3 	Functional Requirements
+ 
+REQ-1:	The user chooses to update his/her EB.
+
+REQ-2:	If no EB was posted in the first place, an error message will alert the user. Otherwise, the system will show the EB and its information.
+
+REQ-3:	The user changes information of the EB and wishes to update the EB by choosing the update button.
+
+REQ-4: An error message will alert the user if invalid input was detected. Otherwise, the system will ask the user to confirm their choice.
+
+REQ-5: If the user chooses yes, the EB is updated. If not, the EB doesn't change.
+
+****
 ### 5.     Other Nonfunctional Requirements
 #### 5.1     Performance Requirements
  
@@ -188,7 +229,7 @@ Usability will be a top concern, as having an easy-to-use service will allow for
 #### 5.5 	Business Rules
 
 Before Account Creation is completed, users will be presented with a Terms and Conditions document stating that BWF is not responsible for negative consequences of using the app.
-
+****
 ### 6. 	Other Requirements
 Appendix A: Glossary
 
