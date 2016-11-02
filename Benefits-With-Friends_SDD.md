@@ -9,30 +9,7 @@ Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, Jerahme
 // Link for Diagrams: https://drive.google.com/file/d/0B99eJs0-sqgzT290dGdTa1lkT0U/view?usp=sharing
 
 
-
-Table of Contents
-
-
-Revision History
-1. Introduction…………………………………….
-    1.1 Purpose……………………………………………….
-    1.2 Intended Audience ??............................................
-    1.3 Scope………………………………………………….
-    1.4 Overview……………………………………………....
-2. Main system architecture (Logical view)........
-    2.1 Complete System Overview………………………...
-    2.2  Application Use Case……………………………….
-3. Sub-systems architecture…………………….
-4. Rationale for each architectural choice……..
-5. Development view…………………………….
-6. Physical view…………………………………..
-7. Database view………………………………....
-8. Work-assignment view………………………..
-9. Element catalog………………………………..
-10. User interfaces………………………………....
-
-
-Introduction
+1. Introduction
 
 1.1 Purpose
 
@@ -52,7 +29,7 @@ Introduction
 //why our website is the best choice,Benefits with friends fills an empty market?  
 //Outline design of key features
 
-Main system architecture (Logical view)
+2. Main system architecture (Logical view)
 
 2.1 Complete System Overview 
 //ask grant to elaborate, check about the diagram
@@ -66,7 +43,7 @@ Main system architecture (Logical view)
 
   From the user’s point of view, there are three actions which can be taken. These are adding an EB, deleting an EB and selecting an EB. If an EB is added or deleted, the main Benefits With Friend Application page will be updated and it will display the newly added EB. If two users selected an EB from one another then they have a choice to message the other.
 
-Sub-systems architecture   
+3. Sub-systems architecture   
 
 3.1 Account Creation System
     An account component will take in a username and a password from the user and store it to the database. 
@@ -77,31 +54,31 @@ Sub-systems architecture
 3.3 Main Application
 //unsure what to do here
 
-Rationale for each architectural choice
+4. Rationale for each architectural choice
 //ask about the rationales too??
 
   4.1 Rationale for Structure of Account Creation System
   4.2 Rationale for Structure of Messaging System
   4.3 Rationale for Structure of Main Application
    
-Development view //chart
+5. Development view //chart
 
   The project for Benefits With Friends will be build with [name of IDE]. The directory structure of the project files are shown below.
 //need to explain more?
 
-Physical view //chart
+6. Physical view //chart
 
   The physical view of the application process would only need the standard keyboard, mouse, and monitor. There must be access to the Internet since the application will be a website.
 
-Database view //chart
+7. Database view //chart
 
-Work-assignment view //who will work on what component
+8. Work-assignment view //who will work on what component
 
   All coding will be done by Felipe Ronderos while Jose Hernandez, Tuyet-Le Ngoc, Thanh Trinh, and Jerahmeel Wilson will work on documentation.
 
-Element catalog //chart
+9. Element catalog //chart
 
-User interfaces //chart
+10. User interfaces //chart
 //how to show the user interface of a website
 //create a markup with no functionality?
 
