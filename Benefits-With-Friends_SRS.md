@@ -11,7 +11,7 @@ The purpose of this document is to give a detailed description of the requiremen
 
 #### 1.2 	Document Conventions
 
-All typographic conventions in the document are the default conventions of this document. Every requirement is expected to be high or medium priority.
+All typographic conventions in the document are the default conventions. Every requirement is expected to be high or medium priority.
 
 #### 1.3 	Intended Audience and Reading Suggestions
 
@@ -77,7 +77,7 @@ Users will interact with the application through any device which can support a 
 
 #### 3.3 	Software Interfaces
  
-The application will use a Maria DB database on the same server in order to store user data. This will run on Fedora Linux v24.
+The application will use mySQL and a Maria DB database on the same server in order to store user data. This will run on Fedora Linux v24.
 
 #### 3.4 	Communications Interfaces
  
@@ -92,7 +92,7 @@ New users will create a unique account to which their personal information will 
  
 ###### 4.1.2 	Stimulus/Response Sequences
  
-The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information. New users must provide valid input or else an error message will alert the new user.
+The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information. New users must provide valid input or else an error message will alert the new user. In case that creating an account fails, the system will give the new user a temporary account but the user cannot use any of the application's features.
 
 ###### 4.1.3 	Functional Requirements
  
@@ -124,7 +124,7 @@ REQ-5: If the answer is correct, the system will log the user into his/her accou
 #### 4.3     Posting An Employee Benefit
 ###### 4.3.1 	Description and Priority
 
-Users will be able to post a description of their EB to a public board. The public board is a list which all of BWF's users can see other users' EBs. This is a medium priority feature since the user can choose to not post an EB.
+Users will be able to post a description of their EB to a public board. The public board is a list which all of BWF's users can see other users' EBs. This is a medium priority feature since the user can choose to not post an EB. If a user chooses to not post an EB, then the user can only see other users' EBs on the public board and select them but cannot interact with other users.
  
 ###### 4.3.2 	Stimulus/Response Sequences
  
@@ -151,7 +151,7 @@ The stimulus will be a user selecting a desirable EB from the public board. The 
  
 REQ-1:	The system will allow the user to select one or more desirable EBs.
 
-REQ-2:	The EB will be marked in some way to distinguish selected EBs from the public list.
+REQ-2:	The EB will be marked in a list to distinguish selected EBs from the public board.
 
 REQ-3:	The system will keep track of the user’s selected EBs.
 
@@ -160,7 +160,7 @@ REQ-4:	Selected EBs from the user will be saved into a list for easy access.
 #### 4.5     Interacting With A Matched User
 ###### 4.5.1 	Description and Priority
  
-Users who select each other’s EBs will be prompted to contact each other to negotiate the use of the EBs in real life.
+Users who select each other’s EBs will be prompted to contact each other to negotiate the use of the EBs in real life. The way the system  detects if two users select each other's EBs will be encoded.
  
 ###### 4.5.2 	Stimulus/Response Sequences
  
