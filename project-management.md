@@ -28,6 +28,5 @@ On 10/18/16, our team met up to discuss our SRS documentations. Everyone was pre
 
 On 10/20/16, the team had a meeting to discuss more about the Software Requirement Specification document. The objective of the meeting was to revise and add more to the document.
 
-On 10/28/16, the team met in order to discuss the Software Design Document. The objective of the meeting is to get a basic understanding of how BWF is going to be designed. The outcome of the meeting was writing what we could for the SDD which will be revised and edited later.
+On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to discuss the Software Design Document. The objective of the meeting is to get a basic understanding of how BWF is going to be designed. The outcome of the meeting was writing what we could for the SDD which will be revised and edited later.
 
-On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to talk about the Software Design Document. The objective was to simply talk about the design and write whatever we could during the meeting.
