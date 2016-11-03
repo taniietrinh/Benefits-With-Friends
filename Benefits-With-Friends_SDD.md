@@ -51,6 +51,8 @@ The user interaction system will allow users to swap emails once they have match
 
 #### 3.4 Main Application
 
+![Behavioral/Component View](https://i.gyazo.com/92ea635c0aeaf419f31d1a87025ff0e7.png)
+
 The Main Application shows how the Database, Account Creation, and User Interaction systems  interact with each other. First, the Main Application will lead the user to the Account Creation system; this account and user information will be stored in the Database system. When the user creates and posts an EB, the EB will also be stored in the Database system. When two users select each other’s EBs, this will lead to the User Interaction system where the system will prompt the two users to interact with each other by email.
 
 ****
@@ -107,14 +109,22 @@ All UI will be designed for ease of use. When first using the application, users
 
 ![BWF Main menu](https://i.gyazo.com/2d1fc400e2a2b1fdcee33ed24359444e.png)
 
+Main menu shows the public board of all EBs posted by users of BWF.
+
 #### 10.3 User Info
 
 ![User Info](https://i.gyazo.com/28e55a3a050fe26600d49c06a7d526e5.png)
+
+User Info shows the user's EB(s) if the user posted any. It also shows the Add EB, Update EB, and Delete EB features.
 
 #### 10.4 Add/Update EB
 
 ![Add/Update EB](https://i.gyazo.com/ffbf3cf1e85b8c5e8c647b1b18b1b329.png)
 
+This screen shows what it would look like when the user adds an EB. The user must provide valid input, where the EB comes from and what the EB provides.
+
 #### 10.5 Delete EB
 
 ![Delete EB](https://i.gyazo.com/c2e3235cbedce87d3a9109a294c768af.png)
+
+This screen shows what it would look like when the user tries to delete an EB. It shows the EB that the user wants to delete.
