@@ -37,17 +37,21 @@ From the user’s point of view, there are three actions which can be taken. The
 ****
 ### 3. Sub-systems architecture   
 
-#### 3.1 Account Creation System
-    
-An account component will take in a username, password and email from the user and store it to the database. This system is dependent on the Database System. 
+#### 3.1 Database System
+
+This system will be used to store user’s information and their EBs.
 
 #### 3.2 Database System
 
-If two users save each other’s EB to their PLs, the users will be prompted to directly message each other to negotiate the real-life use of their EBs.
+An account component will take in a username, password and email from the user and store it to the database. This system is dependent on the Database System. 
 
 #### 3.3 User Interaction System
 
+The user interaction system will allow users to swap emails once they have matched by selecting each other’s EB. Once two users have matched they sent notification asking for confirmation to share emails. Once the two users have accepted, they will be sent each others emails.
+
 #### 3.4 Main Application
+
+The Main Application shows how the Database, Account Creation, and User Interaction systems  interact with each other. First, the Main Application will lead the user to the Account Creation system; this account and user information will be stored in the Database system. When the user creates and posts an EB, the EB will also be stored in the Database system. When two users select each other’s EBs, this will lead to the User Interaction system where the system will prompt the two users to interact with each other by email.
 
 ****
 ### 4. Rationale for each architectural choice
@@ -61,6 +65,8 @@ Before creating an account or using the application, BWF first needs a database 
 BWF requires to have a system of creating an account because it involves a user posting their personal information for all users to see. This provides security. The structure of this system is also dependent on the Database System because it needs the database to hold and store information from the users.
 
 #### 4.3 Rationale for Structure of User Interaction System
+
+The User Interaction system will allow users swap emails once they have matched. This system is integral to the BWF application because it allows users to communicate. The rationale of only allowing user’s to swap emails will help to distance BWF from legality problems by not letting users communicate on the BWF website. This system will be dependent upon the database system to access emails, and the account creation system to add to emails to the database. 
 
 #### 4.4 Rationale for Structure of Main Application
 
