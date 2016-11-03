@@ -54,12 +54,12 @@ The user interaction system will allow users to swap emails once they have match
 
 ![Behavioral/Component View](https://i.gyazo.com/92ea635c0aeaf419f31d1a87025ff0e7.png)
 
-The Main Application shows how the Database, Account Creation, and User Interaction systems  interact with each other. First, the Main Application will lead the user to the Account Creation system; this account and user information will be stored in the Database system. When the user creates and posts an EB, the EB will also be stored in the Database system. When two users select each other’s EBs, this will lead to the User Interaction system where the system will prompt the two users to interact with each other by email.
+The Main Application shows how the Database, Account Creation, and User Interaction systems  interact with each other. First, the Main Application will lead the user to the Account Creation system; this account and user information will be stored in the Database system. When the user creates and posts an EB, the EB will also be stored in the Database system. When two users select each other’s EBs, this will lead the system to prompt the two users to interact with each other through email.
 
 ****
 ### 4. Rationale for each architectural choice
 
-#### 4.1 Rationale for Structure of Account Creation System
+#### 4.1 Rationale for Structure of Database System
 
 Before creating an account or using the application, BWF first needs a database in order to hold and secure potential user information and their EBs.
 
