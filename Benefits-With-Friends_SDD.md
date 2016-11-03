@@ -20,7 +20,7 @@ This Software Design Document is intended to provide a detailed overview of the 
 #### 1.4 Overview
 
 Users of BWF will experience unique website that is easy to use, quick, and customizable. This document will explain how the account creation system and user database system will work together, as well as how to properly use the application. BWF will be based off of object oriented architecture. 
-
+****
 ### 2. Main system architecture (Logical view)
 
 #### 2.1 Complete System Overview 
@@ -34,7 +34,7 @@ The first major layer is the Benefits With Friends Application layer. This layer
 ![Application Use Case](https://i.gyazo.com/0040077cf4a1abc8d283621928ca1e2e.png)
 
 From the user’s point of view, there are three actions which can be taken. These are adding an EB, deleting an EB and selecting an EB. If an EB is added or deleted, the main Benefits With Friend Application page will be updated and it will display the newly added EB. If two users selected an EB from one another then they have a choice to message the other.
-
+****
 ### 3. Sub-systems architecture   
 
 #### 3.1 Account Creation System
@@ -45,9 +45,11 @@ An account component will take in a username, password and email from the user a
 
 If two users save each other’s EB to their PLs, the users will be prompted to directly message each other to negotiate the real-life use of their EBs.
 
-#### 3.3 Main Application
+#### 3.3 User Interaction System
 
+#### 3.4 Main Application
 
+****
 ### 4. Rationale for each architectural choice
 
 #### 4.1 Rationale for Structure of Account Creation System
@@ -58,35 +60,37 @@ Before creating an account or using the application, BWF first needs a database 
 
 BWF requires to have a system of creating an account because it involves a user posting their personal information for all users to see. This provides security. The structure of this system is also dependent on the Database System because it needs the database to hold and store information from the users.
 
-#### 4.3 Rationale for Structure of Main Application
+#### 4.3 Rationale for Structure of User Interaction System
+
+#### 4.4 Rationale for Structure of Main Application
 
 The Main Application of BWF is dependent on the Account Creation System because without an account, potential users cannot have access to the Main Application. Users will be required to add their own EB to the public list before selecting others to ensure that all users are contributing to the average quality of EBs.
-   
+****
 ### 5. Development view
 
 ![Development view](https://i.gyazo.com/2b4e49ab57b6b7ced8daace16e3f3c51.png)
 
 The project for Benefits With Friends will be build with SublimeText. The directory structure of the project files are shown above. Source code files will be included within the directory System, Account and Employee-Benefits.
-
+****
 ### 6. Physical view
 
 ![Physical view](https://i.gyazo.com/ebebf93f6890071cba7245d782be771c.png)
-
+****
 ### 7. Database view
 
 ![Database view](https://i.gyazo.com/62a973b7ff48915ba64a6a0dbe19e930.png)
-
+****
 ### 8. Work-assignment view
 
 Our team’s assignment are as followed:
 
 User Interface Design & Front-End Development: Jose Hernandez, Tuyet-Ngoc Le, Thanh Trinh and Jerahmeel Wilson
 Application Development & Database Management: Felipe Ronderos
-
+****
 ### 9. Element catalog
 
 ![Element Catalog](https://i.gyazo.com/e8242568d81d0d5b6429d8b6dc889432.png)
-
+****
 ### 10. User interfaces
 
 #### 10.1 User Interfaces Description
