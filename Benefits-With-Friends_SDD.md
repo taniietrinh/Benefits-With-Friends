@@ -48,8 +48,16 @@ If two users save each other’s EB to their PLs, the users will be prompted to 
 ### 4. Rationale for each architectural choice
 
 #### 4.1 Rationale for Structure of Account Creation System
-#### 4.2 Rationale for Structure of Messaging System
+
+Before creating an account or using the application, BWF first needs a database in order to hold and secure potential user information and their EBs.
+
+#### 4.2 Rationale for Structure of Account Creation System
+
+BWF requires to have a system of creating an account because it involves a user posting their personal information for all users to see. This provides security. The structure of this system is also dependent on the Database System because it needs the database to hold and store information from the users.
+
 #### 4.3 Rationale for Structure of Main Application
+
+    The Main Application of BWF is dependent on the Account Creation System because without an account, potential users cannot have access to the Main Application. Users will be required to add their own EB to the public list before selecting others to ensure that all users are contributing to the average quality of EBs.
    
 ### 5. Development view
 
