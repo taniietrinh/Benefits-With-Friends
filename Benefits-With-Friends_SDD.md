@@ -11,13 +11,15 @@ The purpose of the Software Design Document is to give a detailed description of
 
 #### 1.2 Intended Audience
 
-The intended audience for BWF is low-level service industry workers whose jobs provide Employee Benefits (EB). The application is intended for audiences between the age of 16-25.
+The intended audience for BWF is low-level service industry workers at the age 18 years or older whose jobs provide Employee Benefits (EB). The intended audience of the software requirement document includes the developer's and other potential stakeholders such as investors, consultations, and clients. Section 2 is aimed towards developers by providing a complete system overview of how BWF will be implemented. 
 
 #### 1.3 Scope  
     
 This Software Design Document is intended to provide a detailed overview of the system architecture of the BWF app and service.
 
 #### 1.4 Overview
+
+Users of BWF will experience unique website that is easy to use, quick, and customizable. This document will explain how the account creation system and user database system will work together, as well as how to properly use the application. BWF will be based off of object oriented architecture. 
 
 ### 2. Main system architecture (Logical view)
 
