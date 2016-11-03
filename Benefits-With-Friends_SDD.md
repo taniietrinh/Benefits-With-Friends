@@ -11,7 +11,7 @@ The purpose of the Software Design Document is to give a detailed description of
 
 #### 1.2 Intended Audience
 
-The intended audience for BWF is low-level service industry workers at the age 18 years or older whose jobs provide Employee Benefits (EB). The intended audience of the software requirement document includes the developer's and other potential stakeholders such as investors, consultations, and clients. Section 2 is aimed towards developers by providing a complete system overview of how BWF will be implemented. 
+The intended audience for BWF is low-level service industry workers at the age 18 years or older whose jobs provide Employee Benefits (EB). The intended audience of the software requirement document includes the developer's and other potential stakeholders such as investors, consultants, and clients. Section 2 is aimed towards developers by providing a complete system overview of how BWF will be implemented. 
 
 #### 1.3 Scope  
     
@@ -19,7 +19,7 @@ This Software Design Document is intended to provide a detailed overview of the 
 
 #### 1.4 Overview
 
-Users of BWF will experience unique website that is easy to use, quick, and customizable. This document will explain how the account creation system and user database system will work together, as well as how to properly use the application. BWF will be based off of object oriented architecture. 
+Users of BWF will experience unique website that is easy to use and quick. This document will explain how the account creation system and user database system will work together, as well as how to properly use the application. BWF will be based off of object oriented architecture. 
 ****
 ### 2. Main system architecture (Logical view)
 
@@ -63,15 +63,11 @@ The Main Application shows how the Database, Account Creation, and User Interact
 
 Before creating an account or using the application, BWF first needs a database in order to hold and secure potential user information and their EBs.
 
-#### 4.2 Rationale for Structure of Account Creation System
-
-BWF requires to have a system of creating an account because it involves a user posting their personal information for all users to see. This provides security. The structure of this system is also dependent on the Database System because it needs the database to hold and store information from the users.
-
-#### 4.3 Rationale for Structure of User Interaction System
+#### 4.2 Rationale for Structure of User Interaction System
 
 The User Interaction system will allow users swap emails once they have matched. This system is integral to the BWF application because it allows users to communicate. The rationale of only allowing users to exchange emails will help distance BWF from legality problems by not letting users communicate on the BWF website. This system will be dependent upon the database system to access emails and the account creation system to add emails to the database. 
 
-#### 4.4 Rationale for Structure of Main Application
+#### 4.3 Rationale for Structure of Main Application
 
 The Main Application of BWF is dependent on the Account Creation System because without an account, potential users cannot have access to the Main Application. Users will be required to add their own EB to the public list before selecting others to ensure that all users are contributing to the average quality of EBs.
 ****
