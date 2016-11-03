@@ -27,19 +27,20 @@ Users of BWF will experience unique website that is easy to use, quick, and cust
 
 ![Complete System Overview](https://i.gyazo.com/508a26d755c0340b19c0973b338e2757.png)
 
-The first major layer is the Benefits With Friends Application layer. This layer will respond to user inputs and display EBs. The second major layer is the Messaging System layer. This is responsible for connecting users in preparation for instant messaging. (I can’t think of a way to say this) The last major layer of Benefits With Friends is the User Database. This layer store and update the user’s account names and password.
+The first major layer is the Benefits With Friends Application layer. This layer will respond to user inputs and display EBs. The second major layer is the Graphical User Interface. This layer is responsible for generating everything the user can see, such as updating the viewpoint. The last major layer of Benefits With Friends is the Database. This layer is accountable for storing and updating the usernames and passwords as well as the EBs.
 
 #### 2.2 Application Use Case
 
 ![Application Use Case](https://i.gyazo.com/0040077cf4a1abc8d283621928ca1e2e.png)
 
-From the user’s point of view, there are three actions which can be taken. These are adding an EB, deleting an EB and selecting an EB. If an EB is added or deleted, the main Benefits With Friend Application page will be updated and it will display the newly added EB. If two users selected an EB from one another then they have a choice to message the other.
+The Application Use Case assumes that the user already created an account. From the user’s point of view, there are three actions which can be taken. These are adding an EB, deleting an EB and selecting an EB. If an EB is added, the main Benefits With Friend Application page will be updated and it will display the newly added EB. If an EB is deleted, the BWF application page will remove the EB from the EB list. In order to select an EB, the user must have already added an EB. If two users select an EB from one another, then they have a choice to contact the other, which is labeled as User Interaction in the above diagram. User Interaction can occur if and only if two users select each other’s EB. User Interactions are limited to both users agreeing to share the email addresses used in the creation of their accounts. There will not be an internal messaging system. In order to update an EB, the user will be prompted to delete their current EB listing and then add a new EB.
+
 ****
 ### 3. Sub-systems architecture   
 
 #### 3.1 Database System
 
-This system will be used to store user’s information and their EBs.
+This system will be used to store users' information and their EBs.
 
 #### 3.2 Database System
 
@@ -47,7 +48,7 @@ An account component will take in a username, password and email from the user a
 
 #### 3.3 User Interaction System
 
-The user interaction system will allow users to swap emails once they have matched by selecting each other’s EB. Once two users have matched they sent notification asking for confirmation to share emails. Once the two users have accepted, they will be sent each others emails.
+The user interaction system will allow users to swap emails once they have matched by selecting each other’s EB. Once two users have matched, they sent notification asking for confirmation to share emails. Once the two users have accepted, they will be sent each others emails.
 
 #### 3.4 Main Application
 
@@ -68,7 +69,7 @@ BWF requires to have a system of creating an account because it involves a user 
 
 #### 4.3 Rationale for Structure of User Interaction System
 
-The User Interaction system will allow users swap emails once they have matched. This system is integral to the BWF application because it allows users to communicate. The rationale of only allowing user’s to swap emails will help to distance BWF from legality problems by not letting users communicate on the BWF website. This system will be dependent upon the database system to access emails, and the account creation system to add to emails to the database. 
+The User Interaction system will allow users swap emails once they have matched. This system is integral to the BWF application because it allows users to communicate. The rationale of only allowing users to exchange emails will help distance BWF from legality problems by not letting users communicate on the BWF website. This system will be dependent upon the database system to access emails and the account creation system to add emails to the database. 
 
 #### 4.4 Rationale for Structure of Main Application
 
