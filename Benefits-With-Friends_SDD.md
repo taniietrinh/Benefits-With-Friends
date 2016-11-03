@@ -60,19 +60,17 @@ BWF requires to have a system of creating an account because it involves a user 
 
 #### 4.3 Rationale for Structure of Main Application
 
-    The Main Application of BWF is dependent on the Account Creation System because without an account, potential users cannot have access to the Main Application. Users will be required to add their own EB to the public list before selecting others to ensure that all users are contributing to the average quality of EBs.
+The Main Application of BWF is dependent on the Account Creation System because without an account, potential users cannot have access to the Main Application. Users will be required to add their own EB to the public list before selecting others to ensure that all users are contributing to the average quality of EBs.
    
 ### 5. Development view
 
 ![Development view](https://i.gyazo.com/2b4e49ab57b6b7ced8daace16e3f3c51.png)
 
-The project for Benefits With Friends will be build with [name of IDE]. The directory structure of the project files are shown below.
+The project for Benefits With Friends will be build with SublimeText. The directory structure of the project files are shown above. Source code files will be included within the directory System, Account and Employee-Benefits.
 
 ### 6. Physical view
 
 ![Physical view](https://i.gyazo.com/ebebf93f6890071cba7245d782be771c.png)
-
-The physical view of the application process would only need the standard keyboard, mouse, and monitor. There must be access to the Internet since the application will be a website.
 
 ### 7. Database view
 
@@ -80,7 +78,10 @@ The physical view of the application process would only need the standard keyboa
 
 ### 8. Work-assignment view
 
-All coding will be done by Felipe Ronderos while Jose Hernandez, Tuyet-Le Ngoc, Thanh Trinh, and Jerahmeel Wilson will work on documentation.
+Our team’s assignment are as followed:
+
+User Interface Design & Front-End Development: Jose Hernandez, Tuyet-Ngoc Le, Thanh Trinh and Jerahmeel Wilson
+Application Development & Database Management: Felipe Ronderos
 
 ### 9. Element catalog
 
@@ -89,6 +90,9 @@ All coding will be done by Felipe Ronderos while Jose Hernandez, Tuyet-Le Ngoc, 
 ### 10. User interfaces
 
 #### 10.1 User Interfaces Description
+
+All UI will be designed for ease of use. When first using the application, users will be required to create a unique account using an email address, a username and a password. After which, the users will be redirected to their account information page. Users will then be prompted to submit information on their EB. Once this is done, users will be able to view the main list of EBs. Users will then be able to select preferred EBs from the list. In the event that two users’ EBs are matched, they will both receive a notification and be prompted to communicate through email.
+    
 #### 10.2 Main menu
 
 ![BWF Main menu](https://i.gyazo.com/2d1fc400e2a2b1fdcee33ed24359444e.png)
