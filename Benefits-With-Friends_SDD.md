@@ -29,7 +29,7 @@ The first major layer is the Benefits With Friends Application layer. This layer
 
 #### 2.2 Application Use Case
 
-![Application Use Case](https://i.gyazo.com/1dacec0c18cb8fac9907447719e5706d.png)
+![Application Use Case](https://i.gyazo.com/0040077cf4a1abc8d283621928ca1e2e.png)
 
 From the user’s point of view, there are three actions which can be taken. These are adding an EB, deleting an EB and selecting an EB. If an EB is added or deleted, the main Benefits With Friend Application page will be updated and it will display the newly added EB. If two users selected an EB from one another then they have a choice to message the other.
 
