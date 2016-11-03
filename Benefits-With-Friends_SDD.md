@@ -39,13 +39,14 @@ From the user’s point of view, there are three actions which can be taken. The
 
 #### 3.1 Account Creation System
     
-An account component will take in a username and a password from the user and store it to the database. 
+An account component will take in a username, password and email from the user and store it to the database. This system is dependent on the Database System. 
 
-#### 3.2 Messaging System
+#### 3.2 Database System
 
 If two users save each other’s EB to their PLs, the users will be prompted to directly message each other to negotiate the real-life use of their EBs.
 
 #### 3.3 Main Application
+
 
 ### 4. Rationale for each architectural choice
 
