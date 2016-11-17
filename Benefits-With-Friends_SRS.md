@@ -92,7 +92,7 @@ New users will create a unique account to which their personal information will 
  
 ###### 4.1.2 	Stimulus/Response Sequences
  
-The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information. New users must provide valid input or else an error message will alert the new user. In case that creating an account fails, the system will give the new user a temporary account but the user cannot use any of the application's features.
+The stimulus will be a new user choosing to create an account. The system will respond by creating a new account if the user provides valid information. New users must provide valid input or else an error message will alert the new user. In case that creating an account fails, the system will give an error message alerting the user.
 
 ###### 4.1.3 	Functional Requirements
  
