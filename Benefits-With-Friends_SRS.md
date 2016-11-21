@@ -107,7 +107,7 @@ Users will be able to enter their login information to access their unique user 
  
 ###### 4.2.2 	Stimulus/Response Sequences
  
-The stimulus will be a user accessing the website on any web browser. The system will respond by logging the user into their account if the user inputs their login information. In the case that the user cannot remember their login information, the system will ask the user if he/she wishes to create another account or answer his/her security question to log into their account. If the user chooses the security question, answer it correctly, and logs into his/her account, the system will ask the user to change their password.
+The stimulus will be a user accessing the website on any web browser. The system will respond by logging the user into their account if the user inputs their login information. In the case that the user cannot remember their login information, the system provides a Forgot My Username/Password option. This will send an email to the user with a new username and password to log in with.
 
 ###### 4.2.3 	Functional Requirements
 
@@ -115,11 +115,7 @@ REQ-1:	The system will validate the user input.
 
 REQ-2: An error message will alert the user if the input was invalid. Otherwise, the user will be logged in and redirected to their homepage.
 
-REQ-3:	If the error continues to occur, the user has the option to create another account or answer his/her security question to log back into his/her account.
-
-REQ-4: If the user chooses to answer his/her security question, the system will show the question and the user must answer it as the way he/she answered it the same way as when he/she created the account.
-
-REQ-5: If the answer is correct, the system will log the user into his/her account and ask the user to change their password. If not, an error message will alert the user.
+REQ-3:	If the error continues to occur, the user has the Forgot my Username/Password option to send an email to the user's email address with new username and password to log in with.
 
 #### 4.3     Posting An Employee Benefit
 ###### 4.3.1 	Description and Priority
