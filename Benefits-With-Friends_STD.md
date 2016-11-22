@@ -2,9 +2,7 @@
 # Version 1.0
 # Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson
 
-Test Case #: 1.1
-
-Test Case Name: Account Creation
+#### Test Case # and Name: 1.1 Account Creation
 
 Created by:
 
@@ -27,11 +25,8 @@ Actions/sample input data/expected outcomes:
 4. Re-enters “freestuff2” - The system displays a message of a successful operation. The system redirects user to the home page of the Benefits With Friends website
 
 Postconditions: The email address “jsmith@lsu.edu”, username “johnsmith1”, and password “freestuff2” of the user are saved in the database
-
-
-Test Case #: 1.2
-
-Test Case Name: Unsuccessful Account Creation
+****
+#### Test Case # and Name: 1.2 Unsuccessful Account Creation
 
 Created by:
 
@@ -49,11 +44,8 @@ Actions/sample input data/expected outcomes:
 2. User click ok button - System’s error message disappear
 
 Postconditions: System prompts the user to enter a different username.
-
-
-Test Case #: 2.1
-
-Test Case Name: Log In
+****
+#### Test Case # and Name: 2.1 Log In
 
 Created by:
 
@@ -70,11 +62,8 @@ Actions/sample input data/expected outcomes:
 1. Enters “johnsmith1” as username and “freestuff2” as password - the system displays a message telling the user that the system is logging them in
 
 Postconditions: The user is redirected to the user main menu of the website
-
-
-Test Case #: 2.2
-
-Test Case Name: Unsuccessful Log In
+****
+#### Test Case # and Name: 2.2 Unsuccessful Log In
 
 Created by:
 
@@ -91,11 +80,8 @@ Actions/sample input data/expected outcomes:
 1. Enters “jsmith1” as username and “freestuff2” as password - the system displays a message telling the user about invalid inputs.
 
 Postconditions: The system asks the user to try again.
-
-
-Test Case #: 2.3
-
-Test Case Name: Forgot Username/Password
+****
+#### Test Case # and Name: 2.3 Forgot Username/Password
 
 Created by:
 
@@ -113,11 +99,8 @@ Actions/sample input data/expected outcomes:
 2. User selects the Forgot My Username/Password option and provides his email address “jsmith@lsu.edu” - the system will send an email to “jsmith@lsu.edu” with a new username and password, “aaaa” and “1234bwf”
 
 Postconditions: The user’s new username and password are changed to “aaaa” and “1234bwf” in the database
-
-
-Test Case #: 3.1
-
-Test Case Name: Posting/Adding an Employee Benefit (EB)
+****
+#### Test Case # and Name: 3.1 Posting/Adding an Employee Benefit (EB)
 
 Created by:
 
@@ -135,11 +118,8 @@ Actions/sample input data/expected outcomes:
 2. Enters description of Employee Benefit “Free tacos” - the system will ask the user to confirm before submitting the EB to the public board
 
 Postconditions: The user’s EB is saved into the database and posted onto the public board.
-
-
-Test Case #: 3.2
-
-Test Case Name: Unsuccessful EB
+****
+#### Test Case # and Name: 3.2 Unsuccessful EB
 
 Created by:
 
@@ -157,11 +137,8 @@ Actions/sample input data/expected outcomes:
 2. Enters description of EB “Free tacos” - The system will display an error message saying workplace name is required
 
 Postconditions: The EB won’t be added to the database or website until the necessary information is provided
-
-
-Test Case #: 4.1
-
-Test Case Name: Selecting an EB
+****
+#### Test Case # and Name: 4.1 Selecting an EB
 
 Created by:
 
@@ -178,11 +155,8 @@ Actions/sample input data/expected outcomes:
 1. User selects an EB - EB is now marked to distinguish from others in the public board
 
 Postconditions: The user’s marked EB(s) are saved into a list.
-
-
-Test Case #: 5.1
-
-Test Case Name: User Interaction
+****
+#### Test Case # and Name: 5.1 User Interaction
 
 Created by:
 
@@ -200,11 +174,8 @@ Actions/sample input data/expected outcomes:
 2. User “nscavenger0” selects “johnsmith1”’s EB - The system displays a message to both users that there has been a match.
 
 Postconditions: The users are prompted to contact each other by email.
-
-
-Test Case #: 6.1
-
-Test Case Name: Deleting an EB
+****
+#### Test Case # and Name: 6.1 Deleting an EB
 
 Created by:
 
@@ -222,11 +193,8 @@ Actions/sample input data/expected outcomes:
 2. User click confirm - System delete the user’s EB
 
 Postconditions: The EB is deleted from the database and will no longer be listed on the public board
-
-
-Test Case #: 6.2
-
-Test Case Name: Unsuccessful deletion of EB
+****
+#### Test Case # and Name: 6.2 Unsuccessful deletion of EB
 
 Created by:
 
@@ -243,11 +211,8 @@ Actions/sample input data/expected outcomes:
 1. User click the delete button - System will display an error message saying no EBs were created
 
 Postconditions: The system does nothing else.
-
-
-Test Case #: 7.1
-
-Test Case Name: Update EB
+****
+#### Test Case # and Name: 7.1 Update EB
 
 Created by:
 
@@ -267,11 +232,8 @@ Actions/sample input data/expected outcomes:
 4. User click confirm - EB is updated with new information
 
 Postconditions: The EB is updated on the website and database.
-
-
-Test Case #: 7.2
-
-Test Case Name: Unsuccessful EB Update
+****
+#### Test Case # and Name: 7.2 Unsuccessful EB Update
 
 Created by:
 
@@ -288,5 +250,3 @@ Actions/sample input data/expected outcomes:
 1. User clicks the update button - the system will display an error message saying no EBs were created
 
 Postconditions: The system does nothing else.
-
-
