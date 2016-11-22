@@ -17,12 +17,10 @@ Preconditions: The user is a new user with no account made and wishes to use the
 Actions/sample input data/expected outcomes:
 
 1. Enters “jsmith@lsu.edu” as email address - The system displays a message asking the user to enter a username
-
 2. Enters “johnsmith1” as username - The system displays a message asking the user to enter a password
-
 3. Enters “freestuff2” as password - The system displays a message asking the user to confirm/re-enter the password
-
-4. Re-enters “freestuff2” - The system displays a message of a successful operation. The system redirects user to the home page of the Benefits With Friends website
+4. Re-enters “freestuff2” - The system displays a message of a successful operation. 
+5. Clicks "Sign Up" button - The system redirects user to the home page of the Benefits With Friends website
 
 Postconditions: The email address “jsmith@lsu.edu”, username “johnsmith1”, and password “freestuff2” of the user are saved in the database
 ****
@@ -41,7 +39,7 @@ Preconditions: Username “johnsmith1” is already saved into the database.
 Actions/sample input data/expected outcomes: 
 
 1. User enters “johnsmith1” as username - System display error message that the username is taken
-2. User click ok button - System’s error message disappear
+2. User clicks "OK" button - System’s error message disappear
 
 Postconditions: System prompts the user to enter a different username.
 ****
@@ -59,7 +57,8 @@ Preconditions: The user has an account and isn’t logged into the website. The 
 
 Actions/sample input data/expected outcomes:
 
-1. Enters “johnsmith1” as username and “freestuff2” as password - the system displays a message telling the user that the system is logging them in
+1. Enters “johnsmith1” as username and “freestuff2” as password - 
+2. Clicks "Log In" button - the system displays a message telling the user that the system is logging them in
 
 Postconditions: The user is redirected to the user main menu of the website
 ****
@@ -77,7 +76,8 @@ Preconditions: The user’s username and password are “johnsmith1” and “fr
 
 Actions/sample input data/expected outcomes:
 
-1. Enters “jsmith1” as username and “freestuff2” as password - the system displays a message telling the user about invalid inputs.
+1. Enters “jsmith1” as username and “freestuff2” as password - 
+2. Clicks "Log In" button - the system displays a message telling the user about invalid inputs.
 
 Postconditions: The system asks the user to try again.
 ****
@@ -96,7 +96,8 @@ Preconditions: The user’s email address, username, and password are “jsmith@
 Actions/sample input data/expected outcomes:
 
 1. Enters wrong username/password at least 3 times - The system provides a Forgot My Username/Password option.
-2. User selects the Forgot My Username/Password option and provides his email address “jsmith@lsu.edu” - the system will send an email to “jsmith@lsu.edu” with a new username and password, “aaaa” and “1234bwf”
+2. User selects the Forgot My Username/Password option and enters his email address “jsmith@lsu.edu” - 
+3. Clicks "Send Email" button - the system will send an email to “jsmith@lsu.edu” with a new username and password, “aaaa” and “1234bwf”
 
 Postconditions: The user’s new username and password are changed to “aaaa” and “1234bwf” in the database
 ****
@@ -115,7 +116,9 @@ Preconditions: The user is logged in. No EB’s were posted by the user.
 Actions/sample input data/expected outcomes:
 
 1. Enters workplace name “Taco Bell” - 
-2. Enters description of Employee Benefit “Free tacos” - the system will ask the user to confirm before submitting the EB to the public board
+2. Enters description of Employee Benefit “Free tacos” - 
+3. Clicks "Add" button - the system will ask the user to confirm before submitting the EB to the public board
+4. Clicks "Confirm" button - the system will add the EB to the website
 
 Postconditions: The user’s EB is saved into the database and posted onto the public board.
 ****
@@ -134,7 +137,8 @@ Preconditions: The user is logged in. No EB’s were posted by the user.
 Actions/sample input data/expected outcomes:
 
 1. Leaves workplace name empty -
-2. Enters description of EB “Free tacos” - The system will display an error message saying workplace name is required
+2. Enters description of EB “Free tacos” - 
+3. Clicks "Add" button - The system will display an error message saying the necessary information is required
 
 Postconditions: The EB won’t be added to the database or website until the necessary information is provided
 ****
@@ -189,8 +193,8 @@ Preconditions: The user is logged in. The user have at least one EB added.
 
 Actions/sample input data/expected outcomes:
 
-1. User click the delete button - System ask the user to confirm if he/she wishes to delete the EB
-2. User click confirm - System delete the user’s EB
+1. User clicks the delete button - System ask the user to confirm if he/she wishes to delete the EB
+2. User clicks the confirm button - System delete the user’s EB
 
 Postconditions: The EB is deleted from the database and will no longer be listed on the public board
 ****
@@ -208,7 +212,7 @@ Preconditions: User is logged in and no EBs were created beforehand.
 
 Actions/sample input data/expected outcomes:
 
-1. User click the delete button - System will display an error message saying no EBs were created
+1. User clicks the delete button - System will display an error message saying no EBs were created
 
 Postconditions: The system does nothing else.
 ****
@@ -226,10 +230,11 @@ Preconditions: The user is logged in and have created at least one EB.
 
 Actions/sample input data/expected outcomes:
 
-1. User click the update button - System will show the EB as it would during creation
+1. User clicks the update button - System will show the EB as it would during creation
 2. User changes workplace from “Taco Bell” to “McDonald’s” -
-3. User changes description of EB from “Free tacos” to “Free chicken nuggets” - The system will ask for confirmation
-4. User click confirm - EB is updated with new information
+3. User changes description of EB from “Free tacos” to “Free chicken nuggets” 
+4. Clicks "Update EB" button - The system will ask for confirmation
+5. User clicks confirm - EB is updated with new information
 
 Postconditions: The EB is updated on the website and database.
 ****
