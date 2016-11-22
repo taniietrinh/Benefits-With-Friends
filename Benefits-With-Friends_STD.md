@@ -4,7 +4,7 @@
 
 #### Test Case # and Name: 1.1 Account Creation
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -28,13 +28,13 @@ Postconditions: The email address “jsmith@lsu.edu”, username “johnsmith1�
 ****
 #### Test Case # and Name: 1.2 Unsuccessful Account Creation
 
-Created by:
+Created by: Tuyet-Ngoc Le
 
 Executed by:
 
 Priority: High
 
-Short description: Create an account for a new user fails
+Short description: Creating an account for a new user fails
 
 Preconditions: Username “johnsmith1” is already saved into the database.
 
@@ -47,7 +47,7 @@ Postconditions: System prompts the user to enter a different username.
 ****
 #### Test Case # and Name: 2.1 Log In
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -65,7 +65,7 @@ Postconditions: The user is redirected to the user main menu of the website
 ****
 #### Test Case # and Name: 2.2 Unsuccessful Log In
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -83,7 +83,7 @@ Postconditions: The system asks the user to try again.
 ****
 #### Test Case # and Name: 2.3 Forgot Username/Password
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -102,7 +102,7 @@ Postconditions: The user’s new username and password are changed to “aaaa”
 ****
 #### Test Case # and Name: 3.1 Posting/Adding an Employee Benefit (EB)
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -121,7 +121,7 @@ Postconditions: The user’s EB is saved into the database and posted onto the p
 ****
 #### Test Case # and Name: 3.2 Unsuccessful EB
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -140,7 +140,7 @@ Postconditions: The EB won’t be added to the database or website until the nec
 ****
 #### Test Case # and Name: 4.1 Selecting an EB
 
-Created by:
+Created by: Tuyet-Ngoc Le
 
 Executed by:
 
@@ -158,7 +158,7 @@ Postconditions: The user’s marked EB(s) are saved into a list.
 ****
 #### Test Case # and Name: 5.1 User Interaction
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
@@ -177,7 +177,7 @@ Postconditions: The users are prompted to contact each other by email.
 ****
 #### Test Case # and Name: 6.1 Deleting an EB
 
-Created by:
+Created by: Tuyet-Ngoc Le
 
 Executed by:
 
@@ -196,13 +196,13 @@ Postconditions: The EB is deleted from the database and will no longer be listed
 ****
 #### Test Case # and Name: 6.2 Unsuccessful deletion of EB
 
-Created by:
+Created by: Tuyet-Ngoc Le
 
 Executed by:
 
 Priority: Medium
 
-Short description: User decide not to delete their EB after clicking edit
+Short description: User unsuccessfully tries to delete their EB
 
 Preconditions: User is logged in and no EBs were created beforehand.
 
@@ -214,7 +214,7 @@ Postconditions: The system does nothing else.
 ****
 #### Test Case # and Name: 7.1 Update EB
 
-Created by:
+Created by: Tuyet-Ngoc Le
 
 Executed by:
 
@@ -227,7 +227,7 @@ Preconditions: The user is logged in and have created at least one EB.
 Actions/sample input data/expected outcomes:
 
 1. User click the update button - System will show the EB as it would during creation
-2. User changes workplace from “Taco Bell” to “McDonald’s”
+2. User changes workplace from “Taco Bell” to “McDonald’s” -
 3. User changes description of EB from “Free tacos” to “Free chicken nuggets” - The system will ask for confirmation
 4. User click confirm - EB is updated with new information
 
@@ -235,7 +235,7 @@ Postconditions: The EB is updated on the website and database.
 ****
 #### Test Case # and Name: 7.2 Unsuccessful EB Update
 
-Created by:
+Created by: Thanh Trinh
 
 Executed by:
 
