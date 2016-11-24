@@ -1,0 +1,15 @@
+<h3>Login {{user.id}}</h3>
+</form>
+<button id ="logout">Logout</button>
+<script type="text/javascript">
+	document.getElementById("logout").addEventListener("click", sendLogout);
+
+	function sendLogout(){
+		var req = new XMLHttpRequest();
+		req.open("GET", "/logout", true);
+		req.addEventListener("load", function() {
+		  if (req.status == 200) window.location = '/';
+		});
+		req.send(null);
+	}
+</script>

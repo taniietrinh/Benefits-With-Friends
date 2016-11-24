@@ -1,0 +1,87 @@
+<h3>Match</h3>
+<div id ="match_name"></div>
+<div id ="match_description"></div>
+<button id = "like_button">like</button>
+<button id = "dislike_button">dislike</button>
+<script type="text/javascript">
+	var users = [];
+	var currentUser = {};
+  var nameDiv = document.getElementById("match_name");
+  var benefitDiv = document.getElementById("match_description");
+  var likeButton = document.getElementById("like_button");
+  var dislikeButton = document.getElementById("dislike_button");
+  window.addEventListener("load", displayUser);
+  likeButton.addEventListener("click",like);
+  dislikeButton.addEventListener("click",dislike);
+
+  function like(){
+  	like = {user2id:currentUser.id};
+    var req = new XMLHttpRequest();
+		req.open("POST", "/like", true);
+		req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		req.addEventListener("load", function() {
+		  if (req.status == 200) return displayUser();
+		  else ;//TODOdisplayerror();
+		});
+		req.addEventListener("error", function() {
+      //TODOdisplayerror();
+    });
+    req.send(JSON.stringify(like));
+  }
+  function dislike(){
+  	dislike = {user2id:currentUser.id};
+    var req = new XMLHttpRequest();
+		req.open("POST", "/dislike", true);
+		req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		req.addEventListener("load", function() {
+		  if (req.status == 200) return displayUser();
+		  else ;//TODOdisplayerror();
+		});
+		req.addEventListener("error", function() {
+      //TODOdisplayerror();
+    });
+    req.send(JSON.stringify(dislike));
+  }
+  function displayUser(){
+  	if (users.length < 1){
+  		getNextUsers(function(bool){
+  			if (bool && users.length > 0) return displayUser();
+        else return displayFailure();
+   		})
+  	}
+  	else{
+  		currentUser = users.pop();
+  		nameDiv.innerHTML = currentUser.name;
+  		benefitDiv.innerHTML = currentUser.benefit;
+  	}
+  }
+  function displayFailure(){
+  	nameDiv.innerHTML = "Failure";
+  	benefitDiv.parentNode.removeChild(benefitDiv);
+  	likeButton.parentNode.removeChild(likeButton);
+  	dislikeButton.parentNode.removeChild(dislikeButton);
+  }
+  function getNextUsers(fun){
+	  if (users.length < 1){
+	  	next10(function(err,body){
+	  		if (!err && body && body.length > 0){
+	  			users = users.concat(body);
+	  			return fun(true);
+	  		}
+	  		else return fun(false);
+	  	});
+	  }
+	}
+	function next10(fun){
+		var req = new XMLHttpRequest();
+		req.open("GET", "/next10", true);
+		req.addEventListener("load", function() {
+		  if (req.status == 200) return fun(null,JSON.parse(req.response));
+		  else return fun(new Error(req.status));
+		});
+		req.addEventListener("error", function() {
+      fun(new Error("Network error"));
+    });
+    req.send(null);
+	}
+</script>

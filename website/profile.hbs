@@ -1,0 +1,35 @@
+<h3>Hi, {{user.name}}</h3>
+<div>Feel free to change your account information below:</div>
+<div id="errorDiv"></div>
+<form action="/profile" id="signup_form" method="post" >
+  <input name="name" id="name" type="text" value="{{user.name}}"/>
+  <input name="email" id="email" type="text" value="{{user.email}}"/>
+  <input name="password" id="password" type="password" placeholder="change password (optional)"/>
+  <input name="password2" id="confirm_password" type="password" placeholder="confirm password change"/>
+  <input name="benefit" id="benefit" type="textarea" value="{{user.benefit}}"/>
+  <input name="current_password" id="current_password" type="hidden" value=""/>
+  <button id ="submit">submit</button>
+</form>
+
+<script type="text/javascript">
+	document.getElementById("submit").addEventListener("click", submit);
+  function submit(){
+  	var errorDiv = document.getElementById("errorDiv");
+  	var form = document.getElementById("signup_form");
+		var name = document.getElementById("name").value;
+		var email = document.getElementById("email").value;
+		var password = document.getElementById("password").value;
+		var password2 = document.getElementById("confirm_password").value;
+		var benefit = document.getElementById("benefit").value;
+		var current_password_input = document.getElementById("current_password");
+		if (password != password2){
+	  	errorDiv.innerHTML = "Passwords don't match";
+			return false;
+	  }
+	  var current_password = prompt("Enter your current password", "");
+    if (current_password != null) {
+        current_password_input.value = current_password;
+        form.submit();
+    }
+  }
+</script>

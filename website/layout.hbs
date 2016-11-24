@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Benefits With Friends</title>
+  </head>
+  <body>
+    {{#if user}}
+   		Hi, {{user.name}} 
+   		
+   		<a href="/profile">profile</a>
+   		<a href="/matches">matches</a>
+   		<a href="/match">find matches</a>
+   		<button id = logout>logout</button>
+		{{/if}}
+    {{{body}}}
+    {{#if user}}
+    	<script type="text/javascript">
+    	  document.getElementById("logout").addEventListener("click", logout);
+    	  function logout(){
+	    		var req = new XMLHttpRequest();
+					req.open("GET", "/logout", true);
+					req.addEventListener("load", function() {
+					  if (req.status == 200) window.location = '/';
+					});
+					req.addEventListener("error", function() {
+						;
+					});
+					req.send(null);
+			  }
+    	</script>
+    {{/if}}
+  </body>
+</html>
