@@ -1,4 +1,27 @@
 <h3>Your matches</h3>
-{{#each matches}}
-  {{name}} {{description}} {{time}}<br/>
-{{/each}}
+<style>
+.hidden-local {
+    display: none;
+}
+</style>
+{{#unless matches}}
+You don't have any matches yet. Keep trying! 
+{{/unless}}
+{{#if matches}}
+	{{#each matches}}
+	  {{name}}<br/> Benefit description: {{benefit}} <br/>
+	  <div name="time" class="hidden-local">{{time}}</div>
+	{{/each}}
+<script type="text/javascript">
+  window.addEventListener("load", displayTimes);
+  function displayTimes(){
+  	var times = document.querySelectorAll(".hidden-local");
+  	times.forEach(function(timeDiv){
+  		var d = new Date(0);
+  		d.setUTCMilliseconds(timeDiv.innerHTML);
+			timeDiv.innerHTML = "Matched on: "+d.toString();
+  		timeDiv.className = "";
+  	});
+  }
+</script>
+{{/if}}

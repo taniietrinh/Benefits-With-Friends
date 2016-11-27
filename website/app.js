@@ -35,6 +35,26 @@ passport.use(new localStrategy({
     });
   }));
 
+var accounts = [{ id: 1,
+    name: 'Felipe Ronderos',
+    email: 'b',
+    password: 'ha',
+    benefit: 'ADadsassdadsaasddasda' },
+  { id: 2,
+    name: 'Jose',
+    email: 'a',
+    password: 'ha',
+    benefit: 'Work at mcdonalds' },
+  { id: 3,
+    name: 'Jim ',
+    email: 'c',
+    password: 'ha',
+    benefit: 'asdsdas' }];
+var likes = [];
+var dislikes = [];
+var matches = [];
+var id = 1;
+
 function findByemail(email,cb){
 	var done = accounts.some(function (user){
 		if (user.email == email){
@@ -75,7 +95,10 @@ app.use(urlencodedParser);
 app.use(jsonencodedParser);
 
 app.get("/",function (req, res) {
-  res.render('welcome');
+  if (!req.user)
+    res.render('welcome');
+  else
+    res.render('profile',{user: req.user});
 	});
 
 app.post('/',
@@ -88,14 +111,14 @@ function isLoggedin(req, res, next){
   if (req.user)
   	next();
   else
-  	res.redirect('/');
+  	res.render('welcome',{login_error:"Please input a valid email and password combination"});
 }
 
 app.post('/signup',
 	function(req, res){
 		createAccount(req.body,function(err,user){
       if (err){
-      	//TODO
+      	res.render('welcome',{signup_error:err});
       }
       else{
       	req.login(user, function(err) {
@@ -105,12 +128,7 @@ app.post('/signup',
 		});
 	});
 
-var accounts = [{email:'hi',name:'jim',password:"ho", id:123, benefit:"poop"},
-								{email:'hii',name:'jom',password:"hoo", id:12123, benefit:"poop2"}];
-var likes = [];
-var dislikes = [];
-var matches = [{u1:123,u2:12123,time:12345}];
-var id = 1;
+
 
 function createAccount(body,fun){
   if (body){
@@ -124,6 +142,12 @@ function createAccount(body,fun){
   	attrs.forEach(function(attr){
   		user[attr] = body[attr];
   	})
+    var email_used = accounts.some(function(account){
+      if (account.email == user.email){
+        return true;
+      }});
+    if (email_used)
+      return fun(new Error("Email taken"));
   	accounts.push(user);
     fun(null,user);
   }
@@ -141,11 +165,9 @@ app.get('/profile', isLoggedin,
 app.post('/profile', isLoggedin,
 	function(req, res){
 		var body = req.body;
-		console.log("body",body);
 		var attrs = ["name","email","benefit","current_password"];
   	var allIn = attrs.every(function(attr){
   		if (body[attr]) return true;
-  		console.log("attr",attr);
   		return false;
   	});
   	if (allIn){
@@ -182,14 +204,14 @@ app.get('/matches', isLoggedin,
 function getMatchesInfo(user){
 	var arr = [];
 	matches.forEach(function(match){
-		if (match.u1=user.id){
+		if (match.u1==user.id){
 			var tmp = getAccountById(match.u2);
 			if (tmp){
 				tmp["time"] = match.time;
 			  arr.push(tmp);
 			}
 		}
-		else if (match.u2=user.id){
+		else if (match.u2==user.id){
 			var tmp = getAccountById(match.u1);
 			if (tmp){
 				tmp["time"] = match.time;
@@ -221,25 +243,30 @@ app.get('/next10', isLoggedin,
 		var users = [];
 		var user = req.user;
     var voted_on_ID = [user.id];
+
     matches.forEach(function(match){
     	if (match.u1 == user.id) voted_on_ID.push(match.u2);
-    	else voted_on_ID.push(match.id);
+    	else if (match.u2 == user.id) voted_on_ID.push(match.u1);
     });
+
     likes.forEach(function(like){
       if (like.u1 == user.id){
         voted_on_ID.push(like.u2);
       }
     });
+
     dislikes.forEach(function(dislike){
       if (dislike.u1 == user.id){
         voted_on_ID.push(dislike.u2);
       }
     });
+
 	  likes.forEach(function(like){
       if (like.u2 == user.id){
         accounts.forEach(function(account){
-        	if (account.id == like.u2){
+        	if ((account.id == like.u1)&&(0 > voted_on_ID.indexOf(account.id))){
             users.push(account);
+            voted_on_ID.push(account.id);
             if (users.length == 10){
             	return res.send(users);
             }
@@ -247,6 +274,7 @@ app.get('/next10', isLoggedin,
         });
       } 
 	  });
+
 	  accounts.forEach(function(account){
       if (0 > voted_on_ID.indexOf(account.id)){
       	users.push(account);
@@ -275,7 +303,7 @@ app.post('/like', isLoggedin,
 function like(uid,u2id,fun){
   if (uid && u2id){
     var done = likes.some(function(like){
-      if (like.u1 == u2id && like.u2id == uid){
+      if (like.u1 == u2id && like.u2 == uid){
       	var index = likes.indexOf(like);
       	likes.splice(index,1);
       	var d = new Date();
@@ -315,7 +343,7 @@ function dislike(uid,u2id,fun){
 app.get('/logout', function(req, res){
 	req.logout();
 	res.sendStatus(200);
-	res.redirect('/');
+	//res.redirect('/');
 });
 
 const port = process.env.PORT || 3000;

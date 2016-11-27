@@ -1,11 +1,12 @@
 <h3>Login</h3>
+{{login_error}}
 <form action="/" method="post">
   <input name="email" id="login_email" type="text" placeholder="email" autofocus/>
   <input name="password" id="login_password" type="password" placeholder="password"/>
   <input type="submit" />
 </form>
 <h3>Signup</h3>
-<div id = "signup_error"></div>
+<div id = "signup_error">{{signup_error}}</div>
 <form action="/signup" id="signup_form" method="post" >
   <input name="name" id="signup_name" type="text" placeholder="name"/>
   <input name="email" id="signup_email" type="text" placeholder="email"/>
