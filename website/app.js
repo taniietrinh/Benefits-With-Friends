@@ -35,21 +35,7 @@ passport.use(new localStrategy({
     });
   }));
 
-var accounts = [{ id: 1,
-    name: 'Felipe Ronderos',
-    email: 'b',
-    password: 'ha',
-    benefit: 'ADadsassdadsaasddasda' },
-  { id: 2,
-    name: 'Jose',
-    email: 'a',
-    password: 'ha',
-    benefit: 'Work at mcdonalds' },
-  { id: 3,
-    name: 'Jim ',
-    email: 'c',
-    password: 'ha',
-    benefit: 'asdsdas' }];
+var accounts = [];
 var likes = [];
 var dislikes = [];
 var matches = [];
