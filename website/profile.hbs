@@ -6,7 +6,8 @@
   <input name="email" id="email" type="text" value="{{user.email}}"/>
   <input name="password" id="password" type="password" placeholder="change password (optional)"/>
   <input name="password2" id="confirm_password" type="password" placeholder="confirm password change"/>
-  <input name="benefit" id="benefit" type="textarea" value="{{user.benefit}}"/>
+  <br/>
+  <textarea name="benefit" id="benefit" rows="5" cols="80"/>{{user.benefit}}</textarea>
   <input name="current_password" id="current_password" type="hidden" value=""/>
   <button id ="submit">submit</button>
 </form>
