@@ -20,6 +20,17 @@ There is a security risk involved in this application since there is an account 
 ****
 ## Team members (name, tasks, team style (egoless, chief programmer))
 Team members include Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson. Our team style will be using the chief programmer style. Felipe will be the one in charge of most, if not all, of the coding for the project while the rest of the group will take care of the documentation.
+
+Jose Hernandez
+
+Tuyet-Ngoc Le
+
+Felipe Ronderos
+
+Thanh Trinh
+
+Jerahmeel Wilson
+
 ****
 ## Project schedule: Gantt Chart (milestones, rough estimates, weekly schedule, estimation method)
 ****
@@ -32,3 +43,4 @@ On 10/20/16, the team had a meeting to discuss more about the Software Requireme
 
 On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to discuss the Software Design Document. The objective of the meeting is to get a basic understanding of how BWF is going to be designed. The outcome of the meeting was writing what we could for the SDD which will be revised and edited later.
 
+On 11/27/16, Jose, Jerahmeel, and Felipe met to create a video demonstration for the final presentation and to discuss what's to happen for the presentation.
