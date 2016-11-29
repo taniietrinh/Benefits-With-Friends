@@ -2,8 +2,6 @@
 # Version 1.0
 # Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson
 
-## Index
-****
 ## Vision (what is the ultimate goal of this project)
 Benefits With Friends (BWF) is a website that allows people who work in retail, fast food, and other minimum wage jobs to come together and make use of their employee discounts. The goal of Benefits With Friends is that these people will be able to use this website as a way of couponing or saving money. 
 ****
