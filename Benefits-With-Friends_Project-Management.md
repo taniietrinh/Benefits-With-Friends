@@ -9,6 +9,7 @@ Benefits With Friends (BWF) is a website that allows people who work in retail, 
 For source control, our group will be using Github. All documents and code will be uploaded to Github. Google Docs will also be used to edit documents for easier management when more than one member is working on the same document.
 ****
 ## Process Model
+As for the process model of Benefit With Friends, we think that the Agile methods/Extreme Programming (XP) fits with our project than all of the other process models even though we didn't exactly go through each of the principles of Agile/XP. However, the project was always open to change when it comes to the features. Also, there was always a lot of communication and feedback when it comes to how the project will appear and what it will do.
 ****
 ## Deliverables (executable, documentation, manuals)
 The executable of BWF will be a website. Documentation of BWF is available for viewing purposes on GitHub while team members are able to edit documentation posted on GitHub.
@@ -31,6 +32,10 @@ Jerahmeel Wilson:
 
 ****
 ## Project schedule: Gantt Chart (milestones, rough estimates, weekly schedule, estimation method)
+SRS
+SDD
+STD
+Website
 ****
 ## Meetings summary (200 words, meeting time, members, objective, outcome)
 On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look like and what features it would potentially have. The outcome of the meeting was that everyone there understood and agreed with how the project, which will be a website, will look like.
