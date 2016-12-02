@@ -28,7 +28,7 @@ Felipe Ronderos:
 
 Thanh Trinh: I contributed to the project by participating in writing all of the documents. I took part in the Software Requirements Specification, Software Design, and Software Testing documents. However, I took no part in the coding of the project. I was present for every meeting except for one because that meeting was late at night and too far from where I lived so I chose not to go.
 
-Jerahmeel Wilson:
+Jerahmeel Wilson: I contributed to this project by helping complete documentation. I mainly helped with the Software Design Document and the Software Specification document. I attended every meeting. I was not responsible for any coding of the project.
 
 ****
 ## Project schedule: Gantt Chart (milestones, rough estimates, weekly schedule, estimation method)
