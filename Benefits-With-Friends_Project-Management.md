@@ -22,7 +22,7 @@ Team members include Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh
 
 Jose Hernandez:
 
-Tuyet-Ngoc Le:
+Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participated in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
 
 Felipe Ronderos:
 
