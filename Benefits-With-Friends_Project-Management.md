@@ -20,7 +20,7 @@ There is a security risk involved in this application since there is an account 
 ## Team members (name, tasks, team style (egoless, chief programmer))
 Team members include Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson. Our team style will be using the chief programmer style. Felipe will be the one in charge of most, if not all, of the coding for the project while the rest of the group will take care of the documentation.
 
-Jose Hernandez:
+Jose Hernandez: My contributions to the project include participation in writing the necessary documentation, as well as providing the original project idea. I did not contribute to the coding of the project.
 
 Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participated in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
 
