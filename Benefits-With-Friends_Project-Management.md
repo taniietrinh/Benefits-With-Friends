@@ -47,15 +47,17 @@ The main milestones reached in this project were:
   
   -Converting front-end requests to Ajax
   
-  -Coding back-end logic
+  -Coding back end logic
   
   -Testing back-end logic
 
-Below is a Gantt chart with the time spent on several programming tasks througout the project.
+Below is a Gnatt chart with the time spent on several programming tasks througout the project.
 One task which is not included was the time spent initializing and loading the website onto an Amazon Web Services EC2 server. This was done at the end of the project and took approximately 1 day.
 ![Gantt Chart](https://github.com/taniietrinh/Benefits-With-Friends/blob/master/gantt.PNG)
 
 The website is made up of about 700 lines of code. Using the Bailey and Basily Model for effort-estimation, this means that it took approximately 6 person-months of effort to create the site. This is a fairly accurate reflection of the effort required as most of the technologies used (nodejs, JavaScript, Handlebars, AWS) in order to develop and run the website were completely new to all team members. 
+
+As far as our estimates at the beginning of the project go, we believe they were pretty accurate. Our project was more or less completed on time and there weren't any glaring missing pieces. However, there are still many improvements to be made to the product and implementation including adding a database as well as messaging functionality. We had anticipated there would be similar issues with completing the project as the time frame was relatively narrow and most of the technologies used in order to develop and run the website were completely new to all team members. Everyone on the team is pleased with what we were able to accomplish and demonstrate.
 ****
 ## Meetings summary (200 words, meeting time, members, objective, outcome)
 On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look and what features it would have. The outcome of the meeting was that all group members understood and agreed with how the project, which will be a website, will look as well as its basic functionality.
