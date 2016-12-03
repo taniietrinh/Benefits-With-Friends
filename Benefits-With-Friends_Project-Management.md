@@ -24,7 +24,7 @@ Jose Hernandez: My contributions to the project include participation in writing
 
 Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participate in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
 
-Felipe Ronderos: I contributed to the project by coding all of the components of the website, as well as assisting other group members with documentation.
+Felipe Ronderos: I contributed to the project by coding all of the components of the website, as well as assisting other group members with editing and creating documentation.
 
 Thanh Trinh: I contributed to the project by participating in writing all of the documents. I took part in the Software Requirements Specification, Software Design, and Software Testing documents. However, I took no part in the coding of the project. I was present for every meeting except for the last one. That meeting was late at night and too far from where I lived so I was unable to go.
 
@@ -32,6 +32,7 @@ Jerahmeel Wilson: I contributed to this project by helping complete documentatio
 
 ****
 ## Project schedule: Gantt Chart (milestones, rough estimates, weekly schedule, estimation method)
+
 SRS
 SDD
 STD
@@ -39,12 +40,12 @@ Website
 ![Gantt Chart](https://github.com/taniietrinh/Benefits-With-Friends/blob/master/gantt.PNG)
 ****
 ## Meetings summary (200 words, meeting time, members, objective, outcome)
-On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look like and what features it would potentially have. The outcome of the meeting was that everyone there understood and agreed with how the project, which will be a website, will look like.
+On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look and what features it would have. The outcome of the meeting was that all group members understood and agreed with how the project, which will be a website, will look as well as its basic functionality.
 
-On 10/18/16, our team met up to discuss our SRS documentations. Everyone was present and the meeting lasted for an hour. During our meeting, we had one team member type while the rest discuss the specification of our project. During this time, we also talked about how the application will look and such.
+On 10/18/16, our team met up to discuss our SRS documentations. Everyone was present and the meeting lasted for an hour. During our meeting, we had one team member type while the rest discussed the specification of our project. During this time, we also talked about how the application will look and respond to user inputs.
 
 On 10/20/16, the team had a meeting to discuss more about the Software Requirement Specification document. The objective of the meeting was to revise and add more to the document. The outcome of the meeting was getting a better idea of the project after writing the document to the best of our abilities.
 
-On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to discuss the Software Design Document. The objective of the meeting is to get a basic understanding of how BWF is going to be designed. The outcome of the meeting was writing what we could for the SDD which will be revised and edited later.
+On 10/27/16, Jose, Tuyet, Jerahmeel, and Thanh met in order to discuss the Software Design Document. The objective of the meeting was to get a basic understanding of how BWF is going to be designed. The outcome of the meeting was writing what we could for the SDD which will be revised and edited later.
 
-On 11/27/16, Jose, Jerahmeel, and Felipe met around 8pm to create a video demonstration for the final presentation and to discuss what's to happen for the presentation. The outcome of the meeting was making the video demonstration and having it available on Youtube. Also, the slides for the presentation were edited and contains much more information than it did before the meeting.
+On 11/27/16, Jose, Jerahmeel, and Felipe met around 8pm to create a video demonstration for the final presentation and to discuss an agenda for the presentation. The outcome of the meeting was making the video demonstration and having it available on Youtube. Also, the slides for the presentation were edited and contain much more information than they did before the meeting.
