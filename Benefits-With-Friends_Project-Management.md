@@ -24,7 +24,7 @@ Jose Hernandez: My contributions to the project include participation in writing
 
 Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participated in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
 
-Felipe Ronderos:
+Felipe Ronderos: I contributed to the project by coding all of the components of the website, as well as assisting other group members with documentation.
 
 Thanh Trinh: I contributed to the project by participating in writing all of the documents. I took part in the Software Requirements Specification, Software Design, and Software Testing documents. However, I took no part in the coding of the project. I was present for every meeting except for one because that meeting was late at night and too far from where I lived so I chose not to go.
 
@@ -36,6 +36,7 @@ SRS
 SDD
 STD
 Website
+![Gantt Chart](/gantt.png)
 ****
 ## Meetings summary (200 words, meeting time, members, objective, outcome)
 On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look like and what features it would potentially have. The outcome of the meeting was that everyone there understood and agreed with how the project, which will be a website, will look like.
