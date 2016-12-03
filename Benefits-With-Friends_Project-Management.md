@@ -47,7 +47,7 @@ The main milestones reached in this project were:
   
   -Converting front-end requests to Ajax
   
-  -Coding back end logic
+  -Coding back-end logic
   
   -Testing back-end logic
 
