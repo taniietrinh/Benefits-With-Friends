@@ -37,6 +37,8 @@ SRS
 SDD
 STD
 Website
+Below is a Gnatt chart with the time spent on several programming tasks througout the project.
+One task which is not included was the time spent initializing and loading the website onto an Amazon Web Services EC2 server. This was done at the end of the project and took approximately 1 day.
 ![Gantt Chart](https://github.com/taniietrinh/Benefits-With-Friends/blob/master/gantt.PNG)
 
 The website is made up of about 700 lines of code. Using the Bailey and Basily Model, this means that it took approximately 6 person-months of effort to create the site.
