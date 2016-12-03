@@ -51,7 +51,7 @@ The main milestones reached in this project were:
   
   -Testing back-end logic
 
-Below is a Gnatt chart with the time spent on several programming tasks througout the project.
+Below is a Gantt chart with the time spent on several programming tasks througout the project.
 One task which is not included was the time spent initializing and loading the website onto an Amazon Web Services EC2 server. This was done at the end of the project and took approximately 1 day.
 ![Gantt Chart](https://github.com/taniietrinh/Benefits-With-Friends/blob/master/gantt.PNG)
 
