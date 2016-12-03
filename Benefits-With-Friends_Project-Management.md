@@ -3,30 +3,30 @@
 # Prepared by Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson
 
 ## Vision (what is the ultimate goal of this project)
-Benefits With Friends (BWF) is a website that allows people who work in retail, fast food, and other minimum wage jobs to come together and make use of their employee discounts. The goal of Benefits With Friends is that these people will be able to use this website as a way of couponing or saving money. 
+Benefits With Friends (BWF) is a website that allows people who work in retail, fast food, and other low wage jobs to interact and make use of their employee discounts. The goal of Benefits With Friends is that these people will be able to use this website as a way of couponing or saving money. 
 ****
 ## Configuration management plan (Github)
 For source control, our group will be using Github. All documents and code will be uploaded to Github. Google Docs will also be used to edit documents for easier management when more than one member is working on the same document.
 ****
 ## Process Model
-As for the process model of Benefit With Friends, we think that the Agile methods/Extreme Programming (XP) fits with our project than all of the other process models even though we didn't exactly go through each of the principles of Agile/XP. However, the project was always open to change when it comes to the features. Also, there was always a lot of communication and feedback when it comes to how the project will appear and what it will do.
+We think that the Agile methods/Extreme Programming (XP) fits our project better than other process models even though we won't exactly implement the formal procedures and principles of Agile/XP. However, the project has always been open to change when it comes to the features and implementation. We place a strong emphasis on communication and feedback when it comes to how the project will appear and function.
 ****
 ## Deliverables (executable, documentation, manuals)
-The executable of BWF will be a website. Documentation of BWF is available for viewing purposes on GitHub while team members are able to edit documentation posted on GitHub.
+The executable of BWF will be a website and the corresponding client and server-side code. Documentation of BWF is available on GitHub and team members are able to edit documentation posted on GitHub and work on drafts in Google Docs.
 ****
 ## Potential risks (human risks, time risks, resources risks, liability issues)
-There is a security risk involved in this application since there is an account creation feature. The account feature keeps BWF's users' information secure, however there is always a chance of it failing as well. One liability issue is that, even though the website will have a Terms and Conditions agreement, the users' employers may not approve of their employees using the website. As a result, the user may get in trouble or, in the worst case scenario, fired.
+There are several security risks involved in this application since there is an account creation feature. The account feature keeps BWF's users' information secure, however, as there is always a chance of a failure or breach we must be careful to safeguard user's information and keep backups of our data. One liability issue is that, even though the website will have a Terms and Conditions agreement, the users' employers may not approve of their employees using the website. As a result, users may get in trouble or, in the worst case scenario, fired.
 ****
 ## Team members (name, tasks, team style (egoless, chief programmer))
-Team members include Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson. Our team style will be using the chief programmer style. Felipe will be the one in charge of most, if not all, of the coding for the project while the rest of the group will take care of the documentation.
+Team members include Jose Hernandez, Tuyet-Ngoc Le, Felipe Ronderos, Thanh Trinh, and Jerahmeel Wilson. Our team will be using the chief programmer approach. Felipe will be the one in charge of most, if not all, of the coding for the project while the rest of the group will take care of the documentation, and testing.
 
 Jose Hernandez: My contributions to the project include participation in writing the necessary documentation, as well as providing the original project idea. I did not contribute to the coding of the project.
 
-Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participated in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
+Tuyet-Ngoc Le: My contributions to the project includes participation in writing all of the documents which comprised of the Software Requirements Specification, Software Design, and Software Testing documents. However, I did not participate in the coding of the project. I was also present for every meeting except for the last one, this was due to the location and time.
 
 Felipe Ronderos: I contributed to the project by coding all of the components of the website, as well as assisting other group members with documentation.
 
-Thanh Trinh: I contributed to the project by participating in writing all of the documents. I took part in the Software Requirements Specification, Software Design, and Software Testing documents. However, I took no part in the coding of the project. I was present for every meeting except for one because that meeting was late at night and too far from where I lived so I chose not to go.
+Thanh Trinh: I contributed to the project by participating in writing all of the documents. I took part in the Software Requirements Specification, Software Design, and Software Testing documents. However, I took no part in the coding of the project. I was present for every meeting except for the last one. That meeting was late at night and too far from where I lived so I was unable to go.
 
 Jerahmeel Wilson: I contributed to this project by helping complete documentation. I mainly helped with the Software Design Document and the Software Specification document. I attended every meeting. I was not responsible for any coding of the project.
 
