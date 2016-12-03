@@ -39,7 +39,7 @@ STD
 Website
 ![Gantt Chart](https://github.com/taniietrinh/Benefits-With-Friends/blob/master/gantt.PNG)
 
-The website is made up of about 700 lines of code. Using the Bailey and Basily Model, this means that it took approximate ly 6 person-months of effort to create the site.
+The website is made up of about 700 lines of code. Using the Bailey and Basily Model, this means that it took approximately 6 person-months of effort to create the site.
 ****
 ## Meetings summary (200 words, meeting time, members, objective, outcome)
 On 9/26/16, there was a team meeting after CSC 4330 class for about 20 minutes. Jose, Tuyet, Jerahmeel, and Thanh were present for this meeting. The objective of the meeting was to discuss how the project will look and what features it would have. The outcome of the meeting was that all group members understood and agreed with how the project, which will be a website, will look as well as its basic functionality.
